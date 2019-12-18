@@ -36,7 +36,8 @@
 
 /*listview add record*/
 #express-admin { position: relative; }
-#express-admin h2 .btn { font-weight: normal; float: right; }
+#express-admin h2 .btn { font-weight: normal; float: right; background: rgba(88, 249, 40, 0.49)
+}
 #express-admin h2 .glyphicon-filter { display: inline-block; font-size: 12px; }
 #express-admin h2 .glyphicon-filter:hover { text-decoration: none; }
 /*listview mtm labels*/

@@ -14,7 +14,7 @@ exports.get = function (req, res, next) {
     for (var key in settings) {
         var item = settings[key];
         if (!item.mainview.show || !item.table.view) continue;
-        views.push({slug: item.slug, name: item.table.verbose});
+        views.push({slug: item.slug, name: item.table.rname});
     }
 
     var customs = [];
@@ -27,7 +27,7 @@ exports.get = function (req, res, next) {
     res.locals.tables = !tables.length ? null : {items: tables};
     res.locals.views = !views.length ? null : {items: views};
     res.locals.custom = !customs.length ? null : {items: customs};
-    
+
     res.locals.partials = {
         content:  'mainview'
     };

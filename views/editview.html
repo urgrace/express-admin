@@ -1,5 +1,5 @@
 
-<h2>{{view.name}}</h2>
+<h2>Редактирование таблицы {{view.name}}</h2>
 
 {{#show.success}}
 <div class="alert alert-success alert-dismissable">
@@ -22,8 +22,6 @@
     {{^view.readonly}}
     <fieldset id="controls">
         <button type="submit" class="btn btn-default form-control" name="action[another]">{{string.save-add}}</button>
-
-        <button type="submit" class="btn btn-default form-control" name="action[continue]">{{string.save-continue}}</button>
 
         <button type="submit" class="btn btn-primary form-control" name="action[save]">{{string.save}}</button>
 
