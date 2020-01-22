@@ -1,9 +1,9 @@
 {
     "sqlite": {
-        "database": "test.db"
+        "database": "/Users/volkova/Documents/projects/rps2.0/rps.db"
     },
     "server": {
-        "port": 3000
+        "port": 3002
     },
     "app": {
         "layouts": true,

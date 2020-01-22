@@ -231,7 +231,7 @@ function initServer (args) {
         res.locals._admin = args;
 
         // i18n
-        var lang = req.cookies.lang || 'en';
+        var lang = 'ru';
         res.cookie('lang', lang, {path: '/', maxAge: 900000000});
         moment.locale(lang == 'cn' ? 'zh-cn' : lang);
 

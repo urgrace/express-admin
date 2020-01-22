@@ -1,8 +1,335 @@
 {
-    "test": {
-        "slug": "test",
+    "brands": {
+        "slug": "brands",
         "table": {
-            "name": "test",
+            "name": "brands",
+            "pk": "id",
+            "verbose": "Производители"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "Название",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "logo",
+                "verbose": "Логотип",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "description",
+                "verbose": "Описание",
+                "control": {
+                    "textarea": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "parts": {
+        "slug": "parts",
+        "table": {
+            "name": "parts",
+            "pk": "id",
+            "verbose": "Запчасти"
+        },
+        "columns": [
+            {
+                "name": "id",
+                "verbose": "id",
+                "control": {
+                    "number": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "Наименование",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "sku",
+                "verbose": "Артикул",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "brand",
+                "verbose": "Производитель",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "isAvailable",
+                "verbose": "Наличие",
+                "control": {
+                    "radio": true,
+                    "options": [
+                        "В наличии",
+                        "Под заказ"
+                    ]
+                },
+                "type": "boolean",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "price",
+                "verbose": "Стоимость",
+                "control": {
+                    "number": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "description",
+                "verbose": "Характеристики",
+                "control": {
+                    "textarea": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "cat_id",
+                "verbose": "Категория",
+                "control": {
+                    "select": true
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                },
+                "oneToMany": {
+                    "table": "categories",
+                    "pk": "cat_id",
+                    "columns": [
+                        "name"
+                    ]
+                }
+            },
+            {
+                "name": "size",
+                "verbose": "Габариты",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "img",
+                "verbose": "Изображение",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "categories": {
+        "slug": "categories",
+        "table": {
+            "name": "categories",
+            "pk": "cat_id",
+            "verbose": "categories"
+        },
+        "columns": [
+            {
+                "name": "cat_id",
+                "verbose": "cat_id",
+                "control": {
+                    "text": true
+                },
+                "type": "int",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "name",
+                "verbose": "name",
+                "control": {
+                    "text": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    },
+    "products": {
+        "slug": "products",
+        "table": {
+            "name": "products",
             "pk": "id",
             "verbose": "Оборудование"
         },
@@ -40,8 +367,8 @@
                 }
             },
             {
-                "name": "char",
-                "verbose": "Характеристики",
+                "name": "sku",
+                "verbose": "Артикул",
                 "control": {
                     "text": true
                 },
@@ -54,30 +381,30 @@
                 "editview": {
                     "show": true
                 }
-            }
-        ],
-        "mainview": {
-            "show": true
-        },
-        "listview": {
-            "order": {},
-            "page": 25
-        },
-        "editview": {
-            "readonly": false
-        }
-    },
-    "products": {
-        "slug": "products",
-        "table": {
-            "name": "products",
-            "pk": "id",
-            "verbose": "products"
-        },
-        "columns": [
+            },
             {
-                "name": "id",
-                "verbose": "id",
+                "name": "isAvailable",
+                "verbose": "Наличие",
+                "control": {
+                    "radio": true,
+                    "options": [
+                        "В наличии",
+                        "Под заказ"
+                    ]
+                },
+                "type": "boolean",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "price",
+                "verbose": "Стоимость",
                 "control": {
                     "text": true
                 },
@@ -92,12 +419,35 @@
                 }
             },
             {
-                "name": "age",
-                "verbose": "age",
+                "name": "cat_id",
+                "verbose": "Категория",
+                "control": {
+                    "select": true
+                },
+                "type": "integer",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                },
+                "oneToMany": {
+                    "table": "categories",
+                    "pk": "cat_id",
+                    "columns": [
+                        "name"
+                    ]
+                }
+            },
+            {
+                "name": "brand",
+                "verbose": "Бренд",
                 "control": {
                     "text": true
                 },
-                "type": "int",
+                "type": "text",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
@@ -108,12 +458,28 @@
                 }
             },
             {
-                "name": "size",
-                "verbose": "size",
+                "name": "description",
+                "verbose": "Характеристики",
+                "control": {
+                    "textarea": true
+                },
+                "type": "text",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "img",
+                "verbose": "img",
                 "control": {
                     "text": true
                 },
-                "type": "int",
+                "type": "text",
                 "allowNull": true,
                 "defaultValue": null,
                 "listview": {
