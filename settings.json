@@ -250,7 +250,7 @@
                 "name": "img",
                 "verbose": "Изображение",
                 "control": {
-                    "text": true
+                    "file": true
                 },
                 "type": "text",
                 "allowNull": true,
@@ -477,7 +477,7 @@
                 "name": "img",
                 "verbose": "img",
                 "control": {
-                    "text": true
+                    "img": true
                 },
                 "type": "text",
                 "allowNull": true,
