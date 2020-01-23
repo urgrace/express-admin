@@ -1,6 +1,6 @@
 {
     "sqlite": {
-        "database": "/Users/volkova/Documents/projects/rps2.0/rps.db"
+        "database": "/var/www/html/rps2.0/rps.db"
     },
     "server": {
         "port": 3002
