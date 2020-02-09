@@ -24,6 +24,18 @@
     {{#libs.js}}
     <script src="{{root}}{{.}}" type="text/javascript" charset="utf-8"></script>
     {{/libs.js}}
+
+	<script type="text/javascript" src="https://kit.fontawesome.com/54da1703ab.js"></script>
+
+	<script type="text/javascript">
+        $(document).ready(function(){
+            $('.table-search').tableSearch({
+                searchPlaceHolder:'Input Value'
+            });
+        });
+
+	</script>
+
 </head>
 <body id="express-admin" class="container">
 

@@ -98,7 +98,7 @@ function initSettings (args) {
     // route variables
 
     // upload
-    var upload = args.config.app.upload || path.join(__dirname, 'public/upload');
+    var upload = args.config.app.upload || path.join("/var/www/html/rps2.0/public/img/store");
     args.config.app.upload = upload;
     if (!fs.existsSync(upload)) fs.mkdirSync(upload);
 

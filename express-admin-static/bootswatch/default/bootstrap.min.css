@@ -8049,3 +8049,47 @@ button.close {
 .navbar-inverse {
 	background: #002255;
 }
+
+.search-input {
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+	padding: 6px;
+	font-size: 14px;
+	color: #0d0d0d;
+	line-height: 20px;
+	vertical-align: top;
+	float: right;
+	margin-right: 30px;
+	width: 300px;
+	font-weight: 200;
+}
+.intro {
+	padding: 50px 0;
+}
+
+.intro__list {
+	list-style: none;
+	width: 50%;
+}
+
+.intro__list li {
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 20px;
+}
+.intro__list span {
+	font-size: 19px;
+	color: #ac2925;
+}
+.intro__list i {
+	position: absolute;
+	top: 7px;
+	left: 0;
+	font-size: 25px;
+	color: green;
+}
+
+.intro-img img {
+	float: right;
+}

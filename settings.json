@@ -475,9 +475,9 @@
             },
             {
                 "name": "img",
-                "verbose": "img",
+                "verbose": "Изображение",
                 "control": {
-                    "img": true
+                    "file": true
                 },
                 "type": "text",
                 "allowNull": true,

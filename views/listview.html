@@ -5,6 +5,7 @@
     {{^table}}{{name}}{{/table}}
     <a href="#" class="glyphicon glyphicon-filter" title="{{string.filter}}"></a>
     {{#table}}
+	<input type="search" class="search-input" placeholder="Поиск по таблице">
     <a href="{{root}}/{{slug}}/add" class="btn btn-default">{{string.add}}</a>
     {{/table}}
 </h2>
@@ -26,7 +27,7 @@
 
 {{>filter}}
 
-<table class="table table-bordered table-striped table-hover x-table">
+<table class="table table-bordered table-striped table-hover table-search">
     <thead>
         <tr class="label-default">
         {{#columns}}
@@ -34,16 +35,16 @@
         {{/columns}}
         </tr>
     </thead>
-    <tbody>
+    <tbody class="tbody">
     {{#records}}
-        <tr>
+        <tr class="tr">
         {{#pk}}
             <td><a href="{{root}}/{{view.slug}}/{{id}}">{{text}}</a></td>
         {{/pk}}
         {{#values}}
-            <td>
+            <td class="searchable">
                 {{^mtm}}{{.}}{{/mtm}}
-                {{#mtm}}<span class="label label-default">{{.}}</span>{{/mtm}}
+<!--                {{#mtm}}<span class="label label-default">{{.}}</span>{{/mtm}}-->
             </td>
         {{/values}}
         </tr>

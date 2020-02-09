@@ -4,5 +4,9 @@
         "admin": true,
         "salt": "Ijr67CVWj1oxznm15f5D2kXsz/9h4ka2OUold878eAVv06rvoQoNtwQN7+3wb71dmLuKgQD+eNaSzh5zOKrnAv1su/3JKauoNe4ivlUGO7G7t7c2xiydhCwo/kp8AzUkBuHczq/FbVkg0+KKbLPHZWcAbozvM6R3gk3GyYaXNLA=",
         "hash": "gSec5FsboO7bGMccSsWTr0E5YSgjIazbSkBPX8Av5+sOzVQFMwLbvYaGGvvzePHoscqcsEeNPBvgNAD97lwGrPwyVxivmVSt55Ohs5W+tsYMUZRfbOY+wYi3TdbFsP09NT93SebBhBlTg47O6laf5P5D5paXAGjNkqFZb4gtbQU="
-    }
+    },
+	"user": {
+		"name": "user",
+		"password": "yen8srte34!a"
+	}
 }

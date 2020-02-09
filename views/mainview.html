@@ -1,7 +1,6 @@
 
 <h2>
     {{string.site-admin}}
-    <a href="#" class="glyphicon glyphicon-filter" title="{{string.filter}}"></a>
 </h2>
 
 <form action="#" method="post" accept-charset="utf-8" class="panel panel-default x-mv x-filter x-collapsed">
@@ -44,10 +43,28 @@
 <!--</table>-->
 <!--{{/tables}}-->
 <div class="container">
-	<p><img style="float: left" src="https://freekurses.com/wp-content/uploads/a.-kashin-k.-morozov-kurs-sistemnyj-administrator-.jpg">
-		<span style="padding: 60px 0"><b>Добро пожаловать в панель администрирования вашего сайта!</b>  <br>Для редактирования таблицы выберите соответствующее название в верхней части этой страницы, кликните на него - и вы попадёте на страницу редактирования таблицы. Там вы можете вносить изменения в существующие позиции, удалять их и добавлять новые. Изменения после сохранения автоматически вносятся в базу данных и выводятся на сайте.<br>
-			Если возникнут вопросы, звоните разработчикам. Хорошего дня!</span>
-	</p>
+			<div class="intro">
+				<ul class="intro__list">
+					<li>
+						<i class="fas fa-pen"></i>Для редактирования таблицы выберите соответствующее название в верхней части этой страницы, кликните на него - и вы попадёте на страницу редактирования таблицы. Там вы можете вносить изменения в существующие позиции, удалять их и добавлять новые. Изменения после сохранения автоматически вносятся в базу данных и выводятся на сайте.
+					</li>
+					<li>
+						<i class="fas fa-list-ul"></i>Разделяйте характеристики продукта точкой с запятой (<span> ; </span>) - это автоматически создаст на странице сайта упорядоченный список, удобный для чтения и понимания.
+					</li>
+					<li>
+						<i class="fas fa-images"></i>При загрузке изображения продукта не забывайте вписывать его полное название в текстовом поле слева от кнопки "Обзор..." - это необходимо для корректного отображения картинки на сайте.
+					</li>
+					<li>
+						<i class="fas fa-phone"></i>При возникновении вопросов и предложений относительно функционала системы звоните разработчикам, мы поможем.
+					</li>
+				</ul>
+			</div>
+
+			<div class="intro-img">
+				<img width="300" src="https://freekurses.com/wp-content/uploads/a.-kashin-k.-morozov-kurs-sistemnyj-administrator-.jpg">
+			</div>
+
+
 </div>
 {{#views}}
 <table class="table table-bordered table-striped table-hover x-table">
